@@ -2,6 +2,7 @@
 # From: https://angular.io/tutorial/toh-pt0
         https://github.com/oopcoders/Angular-Flex-Layout
         https://youtu.be/cs9LlLtNMA4
+        https://gist.github.com/pimatco/d5b1891feb90b60ca4681011b6513873*/
 
 ng new app-name
 
