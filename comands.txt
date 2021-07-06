@@ -1,0 +1,63 @@
+1. Crear una aplicacion de angular
+# From: https://angular.io/tutorial/toh-pt0
+        https://github.com/oopcoders/Angular-Flex-Layout
+        https://youtu.be/cs9LlLtNMA4
+
+ng new app-name
+
+cd app-name
+
+npm i -s @angular/flex-layout @angular/cdk
+
+ng serve --open
+
+2. Seguir el tutorial https://www.youtube.com/watch?v=cs9LlLtNMA4&list=PLV-DQnYj14bRkxv0J2itDuLgL3cd4pJEP
+
+- Crear los modulos necesarios
+
+ng g m layouts/layout-full
+ng g m layouts/layout-side
+ng g m shared
+
+- Importar los modulos creados en app.module.ts y el shared en los otros
+- Crear los componentes necesarios
+
+ng g c layouts/layout-full
+ng g c layouts/layout-side
+ng g c pages/home
+ng g c pages/sponsors
+ng g c pages/about
+ng g c pages/empleabilidad
+ng g c pages/emprendimiento
+ng g c shared/components/footer
+ng g c shared/components/header
+ng g c shared/components/sidebar
+
+- Eliminar los componentes creados del app.module.ts
+- Agregar el areglo de exports en shared.modules.ts
+- Agregar los modulos que usaran el side layout en layout-side.module.ts
+
+3. Instalar Angular Material
+
+# From: https://material.angular.io/guide/getting-started
+
+ng add @angular/material
+
+- Output:
+
+CREATE src/custom-theme.scss (1462 bytes)
+UPDATE src/app/app.module.ts (807 bytes)
+UPDATE angular.json (3786 bytes)
+UPDATE src/index.html (596 bytes)
+UPDATE src/styles.css (1268 bytes)
+
+- Crear un modulo personalizado para gestionar los componentes del Angular material
+
+ng g m shared/myMaterial
+
+- Agregar el modulo myMaterial en imports y exports de shared.module.ts
+
+- Importar los componentes de material en my-material.module.ts
+
+# From: https://stackoverflow.com/questions/45166844/how-to-import-angular-material-in-project
+        https://gist.github.com/pimatco/d5b1891feb90b60ca4681011b6513873*/
